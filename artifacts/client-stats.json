@@ -2,27 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.41.4",
-  "hash": "5d35220b55ea12cda3ac",
-  "time": 6187,
-  "builtAt": 1577419012314,
+  "hash": "2f6e3bc1e0f6bc5c86d0",
+  "time": 2335,
+  "builtAt": 1577428214999,
   "publicPath": "/",
-  "outputPath": "/Users/hayashihitoshi/Documents/shinyaigeek-blog/dist",
+  "outputPath": "/Users/hayashihitoshi/Documents/shinyaigeek-blog/public/public",
   "assetsByChunkName": {
     "Users/hayashihitoshi/Documents/shinyaigeek-blog/src/containers/Post": "templates/Users/hayashihitoshi/Documents/shinyaigeek-blog/src/containers/Post.2a572d4f.js",
     "Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/404.tsx": "templates/Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/404.tsx.ef55c5ee.js",
     "Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/about.tsx": "templates/Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/about.tsx.74fd2a9c.js",
     "Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/blog.tsx": "templates/Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/blog.tsx.a968705d.js",
     "Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/index.tsx": "templates/Users/hayashihitoshi/Documents/shinyaigeek-blog/src/pages/index.tsx.45f04f1c.js",
-    "main": "main.5d35220b.js",
+    "main": "main.2f6e3bc1.js",
     "styles": [
-      "styles.62a2a46b.css",
-      "templates/styles.62a2a46b.js"
+      "styles.767f87a3.css",
+      "templates/styles.767f87a3.js"
     ],
     "vendors~main": "templates/vendors~main.cf8deda4.js"
   },
   "assets": [
     {
-      "name": "main.5d35220b.js",
+      "name": "main.2f6e3bc1.js",
       "size": 8485,
       "chunks": [
         5
@@ -36,7 +36,7 @@
       "emitted": true
     },
     {
-      "name": "styles.62a2a46b.css",
+      "name": "styles.767f87a3.css",
       "size": 336,
       "chunks": [
         6
@@ -120,7 +120,7 @@
       "emitted": true
     },
     {
-      "name": "templates/styles.62a2a46b.js",
+      "name": "templates/styles.767f87a3.js",
       "size": 82,
       "chunks": [
         6
@@ -157,10 +157,10 @@
         5
       ],
       "assets": [
-        "styles.62a2a46b.css",
-        "templates/styles.62a2a46b.js",
+        "styles.767f87a3.css",
+        "templates/styles.767f87a3.js",
         "templates/vendors~main.cf8deda4.js",
-        "main.5d35220b.js"
+        "main.2f6e3bc1.js"
       ],
       "children": {},
       "childAssets": {}
@@ -174,10 +174,10 @@
         5
       ],
       "assets": [
-        "styles.62a2a46b.css",
-        "templates/styles.62a2a46b.js",
+        "styles.767f87a3.css",
+        "templates/styles.767f87a3.js",
         "templates/vendors~main.cf8deda4.js",
-        "main.5d35220b.js"
+        "main.2f6e3bc1.js"
       ],
       "children": {},
       "childAssets": {}
@@ -764,7 +764,7 @@
         "main"
       ],
       "files": [
-        "main.5d35220b.js"
+        "main.2f6e3bc1.js"
       ],
       "hash": "221fbc8c09f523bf6612",
       "siblings": [
@@ -1395,10 +1395,10 @@
         "styles"
       ],
       "files": [
-        "styles.62a2a46b.css",
-        "templates/styles.62a2a46b.js"
+        "styles.767f87a3.css",
+        "templates/styles.767f87a3.js"
       ],
-      "hash": "62a2a46bbb3f9c62a28b",
+      "hash": "767f87a3cc691d411767",
       "siblings": [
         5,
         7
@@ -1473,7 +1473,7 @@
             "ModuleConcatenation bailout: Module is not an ECMAScript module"
           ],
           "depth": 4,
-          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1577419008993\n      var cssReload = require(\"/Users/hayashihitoshi/Documents/shinyaigeek-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+          "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1577428214015\n      var cssReload = require(\"/Users/hayashihitoshi/Documents/shinyaigeek-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
         },
         {
           "id": "",
@@ -24053,7 +24053,7 @@
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": 4,
-      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1577419008993\n      var cssReload = require(\"/Users/hayashihitoshi/Documents/shinyaigeek-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
+      "source": "// extracted by extract-css-chunks-webpack-plugin\n    if(module.hot) {\n      // 1577428214015\n      var cssReload = require(\"/Users/hayashihitoshi/Documents/shinyaigeek-blog/node_modules/extract-css-chunks-webpack-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"hot\":true,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  "
     },
     {
       "id": 129,
@@ -24193,7 +24193,7 @@
       "errors": [],
       "warnings": [],
       "publicPath": "/",
-      "outputPath": "/Users/hayashihitoshi/Documents/shinyaigeek-blog/dist",
+      "outputPath": "/Users/hayashihitoshi/Documents/shinyaigeek-blog/public/public",
       "assetsByChunkName": {},
       "assets": [],
       "filteredAssets": 0,
