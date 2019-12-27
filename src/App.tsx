@@ -14,8 +14,6 @@ function App() {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/profile">profile</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/dynamic">Dynamic</Link>
       </nav>
       <div className="content">
         <FancyDiv>
