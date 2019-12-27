@@ -1,30 +1,27 @@
-import React from 'react'
-import { Root, Routes, addPrefetchExcludes } from 'react-static'
-import { Link, Router } from '@reach/router'
-import FancyDiv from 'components/FancyDiv'
-import './app.css'
+import React, { useState } from "react";
+import { Root, Routes, addPrefetchExcludes } from "react-static";
+import { Router } from "@reach/router";
+import "./app.css";
+import Header from "components/Header";
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic'])
+addPrefetchExcludes(["dynamic"]);
 
 function App() {
+  const [showContactModal, setShowContactModal] = useState(false);
+  const [showHamburgetMenu, setShowHamburgermenu] = useState(false);
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/profile">profile</Link>
-      </nav>
+      <Header showContactModal={showContactModal} setShowContactModal={setShowContactModal} showHamburgerMenu={showHamburgetMenu} setShowHamburgerMenu={setShowHamburgermenu} />
       <div className="content">
-        <FancyDiv>
-          <React.Suspense fallback={<em>Loading...</em>}>
-            <Router>
-              <Routes path="*" />
-            </Router>
-          </React.Suspense>
-        </FancyDiv>
+        <React.Suspense fallback={<em>Loading...</em>}>
+          <Router>
+            <Routes path="*" />
+          </Router>
+        </React.Suspense>
       </div>
     </Root>
-  )
+  );
 }
 
-export default App
+export default App;
