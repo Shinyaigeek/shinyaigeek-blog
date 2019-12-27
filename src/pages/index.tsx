@@ -14,7 +14,7 @@ export default () => {
       <ul>
         {items.map((post) => (
           <li key={post.attributes.path}>
-            <Link to={`/post/${post.attributes.path}/`}>{post.attributes.name}</Link>
+            <Link to={`/post${post.attributes.path}/`}>{post.attributes.name}</Link>
           </li>
         ))}
       </ul>

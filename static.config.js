@@ -30,7 +30,7 @@ export default {
           items
         }),
         children: items.map((post /* : Post */) => ({
-          path: `/post/${post.id}`,
+          path: `/post${post.attributes.path}`,
           template: "src/containers/Post",
           getData: () => ({
             post
