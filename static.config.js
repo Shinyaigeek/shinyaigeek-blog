@@ -22,7 +22,7 @@ export default {
     )
     return [
       {
-        path: '/blog',
+        path: '/',
         getData: () => ({
           posts,
         }),
