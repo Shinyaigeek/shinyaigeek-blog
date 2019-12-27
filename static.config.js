@@ -20,14 +20,19 @@ export default {
   },
   getRoutes: async () => {
     const itemNum = getItemData.getItemNum();
-    const items = Array(itemNum).fill(0).map((_,index) => {
-      return getItemData.getItemRawString(index + 1);
-    })
+    const items = Array(itemNum)
+      .fill(0)
+      .map((_, index) => {
+        return getItemData.getItemRawString(index + 1);
+      });
     return [
       {
         path: "/",
         getData: () => ({
-          items
+          items: {
+            headers: items,
+            totalItem: itemNum
+          }
         }),
         children: items.map((post /* : Post */) => ({
           path: `/post${post.attributes.path}`,

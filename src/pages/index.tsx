@@ -1,23 +1,23 @@
-import React from 'react'
-import { useRouteData } from 'react-static'
-import { Link } from '@reach/router'
-import { Item } from 'types'
+import React from "react";
+import { useRouteData } from "react-static";
+import { Item } from "types";
+import Welcome from "components/Welcome";
+import Items from "components/Items";
 
 export default () => {
-  const { items }: { items: Item[] } = useRouteData()
+  const {
+    items
+  }: {
+    items: {
+      headers: Item[];
+      totalItem: number;
+    };
+  } = useRouteData();
 
   return (
     <div>
-      <h1>It's blog time.</h1>
-      <br />
-      All Posts:
-      <ul>
-        {items.map((post) => (
-          <li key={post.attributes.path}>
-            <Link to={`/post${post.attributes.path}/`}>{post.attributes.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <Welcome />
+      <Items {...items} />
     </div>
-  )
-}
+  );
+};

@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import { Result, Button } from "antd";
 import ItemList from "./ItemList";
 import { Link } from '@reach/router'
-import { ItemAttributes } from "../../types";
+import { Item } from "../../types";
 
 interface Props {
-  headers: ItemAttributes[];
+  headers: Item[];
   totalItem: number;
 }
 
@@ -70,7 +70,7 @@ export default function Items(props: Props) {
     <div className="home--items" id="home--items">
       {props.headers.length !== 0 &&
         props.headers.map((header, index) => {
-          return <ItemList {...header} key={`itemlist__${index}`} />;
+          return <ItemList {...header.attributes} key={`itemlist__${index}`} />;
         })}
       {props.headers.length === 0 && (
         <Result
