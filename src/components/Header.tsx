@@ -21,7 +21,7 @@ export default function Header(props: Props) {
         <Link to="/">
           <div>
             <img
-              src="/static/icon_transparent_header.png"
+              src="/icon_transparent_header.png"
               alt="icon"
               className="header--title__icon"
             />

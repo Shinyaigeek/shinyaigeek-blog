@@ -16,7 +16,7 @@ export default function Animation() {
           }}
         >
           <img
-            src="/static/icon_transparent.png"
+            src="/icon_transparent.png"
             style={{
               width: "100%",
               height: "100%",
@@ -42,7 +42,7 @@ export default function Animation() {
                 width: "100%",
                 objectFit: "contain"
               }}
-              src="/static/earth.png"
+              src="/earth.png"
               alt="earth"
             />
           </div>

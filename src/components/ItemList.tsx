@@ -17,8 +17,8 @@ export default function Item(props: ItemAttributes) {
         hoverable={true}
         cover={
           <img
-            src="/static/icon_blur.png"
-            data-src="/static/icon_blur.png"
+            src="/icon_blur.png"
+            data-src="/icon_blur.png"
             data-srcset={props.img}
             className="item--card__img lazy"
             alt="card--icon"

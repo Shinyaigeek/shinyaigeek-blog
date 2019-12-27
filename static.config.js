@@ -14,7 +14,7 @@ export default {
     temp: "tmp", // Temp output directory for build files not to be published.
     dist: "public", // The production output directory.
     devDist: "tmp/dev-server", // The development scratch directory.
-    public: "metas", // The public directory (files copied to dist during build)
+    public: "assets", // The public directory (files copied to dist during build)
     assets: "public", // The output directory for bundled JS and CSS
     buildArtifacts: "artifacts" // The output directory for generated (internal) resources
   },
