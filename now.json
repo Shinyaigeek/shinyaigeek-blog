@@ -1,0 +1,13 @@
+{
+  "routes": [
+    { "src": "/users/(?<id>[^/]*)" },
+    { "src": "/profile" },
+    { "src": "/" },
+    { "src": "/legacy", "status": 404 },
+    {
+      "src": "/redirect",
+      "status": 308,
+      "headers": { "Location": "https://zeit.co/" }
+    }
+  ]
+}
