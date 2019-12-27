@@ -19,22 +19,17 @@ export default {
     buildArtifacts: "artifacts" // The output directory for generated (internal) resources
   },
   getRoutes: async () => {
-    const { data: posts } /* :{ data: Post[] } */ = await axios.get(
-      "https://jsonplaceholder.typicode.com/posts"
-    );
-
     const itemNum = getItemData.getItemNum();
     const items = Array(itemNum).fill(0).map((_,index) => {
       return getItemData.getItemRawString(index + 1);
     })
-    console.log(items)
     return [
       {
         path: "/",
         getData: () => ({
-          posts
+          items
         }),
-        children: posts.map((post /* : Post */) => ({
+        children: items.map((post /* : Post */) => ({
           path: `/post/${post.id}`,
           template: "src/containers/Post",
           getData: () => ({
