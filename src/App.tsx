@@ -10,10 +10,11 @@ addPrefetchExcludes(["dynamic"]);
 
 function App() {
   const [showContactModal, setShowContactModal] = useState(false);
-  const [showHamburgetMenu, setShowHamburgermenu] = useState(false);
+  const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+  
   return (
     <Root>
-      <Header showContactModal={showContactModal} setShowContactModal={setShowContactModal} showHamburgerMenu={showHamburgetMenu} setShowHamburgerMenu={setShowHamburgermenu} />
+      <Header showContactModal={showContactModal} setShowContactModal={() => setShowContactModal(!showContactModal)} showHamburgerMenu={showHamburgerMenu} setShowHamburgerMenu={() => setShowHamburgerMenu(!showHamburgerMenu)} />
       <div style={{
         position: "relative",
         top: "72px"
