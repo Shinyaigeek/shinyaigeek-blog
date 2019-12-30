@@ -14,20 +14,25 @@ export default {
     temp: "tmp", // Temp output directory for build files not to be published.
     dist: "public", // The production output directory.
     devDist: "tmp/dev-server", // The development scratch directory.
-    public: "metas", // The public directory (files copied to dist during build)
-    assets: "public", // The output directory for bundled JS and CSS
+    public: "assets", // The public directory (files copied to dist during build)
+    assets: "", // The output directory for bundled JS and CSS
     buildArtifacts: "artifacts" // The output directory for generated (internal) resources
   },
   getRoutes: async () => {
     const itemNum = getItemData.getItemNum();
-    const items = Array(itemNum).fill(0).map((_,index) => {
-      return getItemData.getItemRawString(index + 1);
-    })
+    const items = Array(itemNum)
+      .fill(0)
+      .map((_, index) => {
+        return getItemData.getItemRawString(index + 1);
+      });
     return [
       {
         path: "/",
         getData: () => ({
-          items
+          items: {
+            headers: items,
+            totalItem: itemNum
+          }
         }),
         children: items.map((post /* : Post */) => ({
           path: `/post${post.attributes.path}`,
@@ -48,6 +53,7 @@ export default {
       }
     ],
     require.resolve("react-static-plugin-reach-router"),
-    require.resolve("react-static-plugin-sitemap")
+    require.resolve("react-static-plugin-sitemap"),
+    "react-static-plugin-sass"
   ]
 };

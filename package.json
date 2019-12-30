@@ -12,7 +12,9 @@
   "dependencies": {
     "@reach/router": "^1.2.1",
     "@types/react-html-parser": "^2.0.1",
+    "antd": "^3.26.4",
     "axios": "^0.19.0",
+    "emailjs-com": "^2.4.1",
     "front-matter": "^3.0.2",
     "highlight.js": "^9.17.1",
     "marked": "^0.8.0",
@@ -21,6 +23,7 @@
     "react-html-parser": "^2.0.2",
     "react-static": "^7.2.0",
     "react-static-plugin-reach-router": "^7.2.0",
+    "react-static-plugin-sass": "^7.2.2",
     "react-static-plugin-sitemap": "^7.2.0",
     "react-static-plugin-source-filesystem": "^7.2.0",
     "react-static-plugin-typescript": "^7.2.0"

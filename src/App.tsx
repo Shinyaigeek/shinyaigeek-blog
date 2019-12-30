@@ -1,30 +1,33 @@
-import React from 'react'
-import { Root, Routes, addPrefetchExcludes } from 'react-static'
-import { Link, Router } from '@reach/router'
-import FancyDiv from 'components/FancyDiv'
-import './app.css'
+import React, { useState } from "react";
+import { Root, Routes, addPrefetchExcludes } from "react-static";
+import { Router } from "@reach/router";
+import "./app.css";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
-addPrefetchExcludes(['dynamic'])
+addPrefetchExcludes(["dynamic"]);
 
 function App() {
+  const [showContactModal, setShowContactModal] = useState(false);
+  const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+  
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/profile">profile</Link>
-      </nav>
-      <div className="content">
-        <FancyDiv>
-          <React.Suspense fallback={<em>Loading...</em>}>
-            <Router>
-              <Routes path="*" />
-            </Router>
-          </React.Suspense>
-        </FancyDiv>
+      <Header showContactModal={showContactModal} setShowContactModal={() => setShowContactModal(!showContactModal)} showHamburgerMenu={showHamburgerMenu} setShowHamburgerMenu={() => setShowHamburgerMenu(!showHamburgerMenu)} />
+      <div style={{
+        position: "relative",
+        top: "72px"
+      }}>
+        <React.Suspense fallback={<em>Loading...</em>}>
+          <Router>
+            <Routes path="*" />
+          </Router>
+        </React.Suspense>
       </div>
+      <Footer />
     </Root>
-  )
+  );
 }
 
-export default App
+export default App;
