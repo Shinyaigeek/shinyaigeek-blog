@@ -15,7 +15,7 @@ export default {
     dist: "public", // The production output directory.
     devDist: "tmp/dev-server", // The development scratch directory.
     public: "assets", // The public directory (files copied to dist during build)
-    assets: "public", // The output directory for bundled JS and CSS
+    assets: "", // The output directory for bundled JS and CSS
     buildArtifacts: "artifacts" // The output directory for generated (internal) resources
   },
   getRoutes: async () => {
