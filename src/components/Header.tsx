@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from '@reach/router'
+import { Link } from "@reach/router";
 
 import { Drawer } from "antd";
 
@@ -71,7 +71,7 @@ export default function Header(props: Props) {
         </div>
         <Drawer
           visible={props.showHamburgerMenu}
-          onClose={() => props.setShowHamburgerMenu()}
+          // onClose={() => props.setShowHamburgerMenu()}
           width="100%"
           zIndex={2000}
           closable={false}
@@ -104,9 +104,7 @@ export default function Header(props: Props) {
             </div>
             <div
               className="header--contents__anchorBlock"
-              onClick={() => {
-                props.setShowContactModal();
-              }}
+              onClick={() => props.setShowContactModal()}
             >
               コンタクト
             </div>

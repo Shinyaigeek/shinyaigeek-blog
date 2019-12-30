@@ -51,7 +51,7 @@ body {
     position: relative;
     left: 10px;
 
-    &__toHome {
+    a {
       text-decoration: none;
       color: $theme_text;
     }
