@@ -23,7 +23,7 @@ export default {
     const items = Array(itemNum)
       .fill(0)
       .map((_, index) => {
-        return getItemData.getItemRawString(index + 1);
+        return getItemData.getItemRawString(itemNum - index);
       });
     return [
       {
